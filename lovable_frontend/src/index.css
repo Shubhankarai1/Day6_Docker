@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 215 100% 98%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 215 25% 27%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Custom chat colors */
+    --chat-background: 215 100% 98%;
+    --chat-user-bubble: 217 91% 60%;
+    --chat-ai-bubble: 0 0% 100%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    
+    /* Agent badge colors */
+    --badge-general: 217 91% 60%;
+    --badge-product: 142 76% 36%;
+    --badge-technical: 38 92% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 213 31% 91%;
+
+    --card: 215 28% 17%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 25%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 215 28% 25%;
+    --muted-foreground: 217 10% 65%;
+
+    --accent: 215 28% 25%;
+    --accent-foreground: 213 31% 91%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 213 31% 91%;
+
+    --border: 215 28% 25%;
+    --input: 215 28% 25%;
+    --ring: 217 91% 60%;
+
+    /* Custom chat colors for dark mode */
+    --chat-background: 215 28% 17%;
+    --chat-user-bubble: 217 91% 60%;
+    --chat-ai-bubble: 215 28% 25%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    
+    /* Agent badge colors */
+    --badge-general: 217 91% 60%;
+    --badge-product: 142 76% 36%;
+    --badge-technical: 38 92% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
